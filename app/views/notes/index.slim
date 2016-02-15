@@ -1,4 +1,5 @@
 h2 Hello!
+= current_user.email
 hr Go create a new note
 br
 
@@ -7,7 +8,9 @@ br
 
 hr
 -@notes.each do |note|
- = link_to note.title, note
+ h2= link_to note.title, note
  p Added date:
  = note.created_at.strftime('%b %d, %Y')
  = truncate(note.content, length: 200)
+br
+	hr

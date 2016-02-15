@@ -1,12 +1,39 @@
 // Place all the styles related to the Landing controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
 body {
   text-align:center;
   padding:0;
   margin:0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
-  font-stretch: semi-condensed;
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size-adjust: auto;
   background-color:white;
 }
+
+p {font-size: 3em;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size: 3em;
+}
+
+header {
+
+  color: rgb(138, 200, 251);
+  cursor: auto;
+  display: inline;
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size: 10em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+
+}
+
+.col-md-4{padding-top: 0;
+padding-right: 100px;}

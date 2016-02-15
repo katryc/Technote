@@ -8,7 +8,7 @@ br
 
 hr
 -@notes.each do |note|
- h2= link_to note.title, note
+ p= link_to note.title, note
  p Added date:
  = note.created_at.strftime('%b %d, %Y')
  = truncate(note.content, length: 200)

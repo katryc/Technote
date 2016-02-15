@@ -1,0 +1,11 @@
+<%= form_for @note do |f|%>
+<%= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Add a corresponding category"}%>
+
+<h2>Title  <%= f.text_field :title%>
+  <br>
+<h2>Content <%= f.text_area :content%>
+  <br>
+  <%= f.submit%>
+
+
+ <%end%>

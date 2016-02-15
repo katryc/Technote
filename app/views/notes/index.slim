@@ -1,0 +1,13 @@
+h2 Hello!
+hr Go create a new note
+br
+
+.btn-group
+  = link_to "Create", new_note_path, class:"btn btn-default"
+
+hr
+-@notes.each do |note|
+ = link_to note.title, note
+ p Added date:
+ = note.created_at.strftime('%b %d, %Y')
+ = truncate(note.content, length: 200)
